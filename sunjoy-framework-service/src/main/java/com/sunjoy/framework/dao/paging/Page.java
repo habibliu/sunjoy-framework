@@ -7,9 +7,10 @@ import java.util.List;
 /**
  * 
  * 分页对象
- * 
+ * @author liuganchao<740033486@qq.com>
+ * @date 2018-06-20
  */
-public class Page<T> extends ArrayList<T> implements Serializable {
+public class Page<T> implements Serializable {
 
 	private static final long serialVersionUID = -8123039538589235324L;
 
@@ -30,6 +31,11 @@ public class Page<T> extends ArrayList<T> implements Serializable {
 
 	/** 当前页的结尾索引 */
 	protected int end;
+	
+	/**
+	 * 数据容器
+	 */
+	protected List<T> rows=new ArrayList<T>(); 
 
 	/**
 	 * 获取当前页
@@ -152,12 +158,12 @@ public class Page<T> extends ArrayList<T> implements Serializable {
 	}
 
 	public List<T> getRows() {
-		return this;
+		return this.rows;
 	}
 
 	public void setRows(List<T> rows) {
-		this.clear();
-		this.addAll(rows);
+		this.rows.clear();
+		this.rows.addAll(rows);
 	}
 
 }
