@@ -36,6 +36,11 @@ public class Page<T> implements Serializable {
 	 * 数据容器
 	 */
 	protected List<T> rows=new ArrayList<T>(); 
+	
+	public Page(PageInfo page){
+		this.pageSize=page.pageSize;
+		this.currentPage=page.currentPage;
+	}
 
 	/**
 	 * 获取当前页
