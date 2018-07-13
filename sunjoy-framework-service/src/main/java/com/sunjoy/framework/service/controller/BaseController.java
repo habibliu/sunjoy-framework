@@ -18,8 +18,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.context.WebApplicationContext;
 
-import com.sunjoy.common.exception.CommonException;
-import com.sunjoy.common.i18n.I18nUtils;
+import com.sunjoy.framework.exception.CommonException;
+import com.sunjoy.framework.service.utils.I18nUtils;
 import com.sunjoy.framework.service.utils.MessageUtils;
 
 /**

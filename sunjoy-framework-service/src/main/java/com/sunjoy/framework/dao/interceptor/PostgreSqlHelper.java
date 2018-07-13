@@ -3,7 +3,8 @@ package com.sunjoy.framework.dao.interceptor;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import com.sunjoy.common.exception.CommonException;
+import com.sunjoy.framework.exception.CommonException;
+
 
 /**
  * PostgreSQ方言辅助实现类

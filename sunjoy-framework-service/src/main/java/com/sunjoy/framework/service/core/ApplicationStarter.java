@@ -11,8 +11,8 @@ import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 
-import com.sunjoy.common.utils.LogbackUtils;
 import com.sunjoy.framework.service.core.config.CoreConfig;
+import com.sunjoy.framework.utils.LogbackUtils;
 
 @ComponentScan(value = "com.sunjoy")
 @EnableAutoConfiguration

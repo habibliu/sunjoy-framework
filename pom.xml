@@ -11,7 +11,6 @@
 	<description>The framework for sunjoy</description>
 
 	<modules>
-		<module>sunjoy-framework-client</module>
 		<module>sunjoy-framework-service</module>
 	</modules>
 
@@ -117,7 +116,7 @@
 		</dependencies>
 	</dependencyManagement>
 
-	<repositories>
+	 <repositories>
 		<repository>
 			<id>spring-snapshots</id>
 			<name>Spring Snapshots</name>
@@ -135,17 +134,16 @@
 			</snapshots>
 		</repository>
 	</repositories>
-
-	 
+	
 	<distributionManagement>
 		<repository>
-			<id>nexus-releases</id>
-			<url>http://192.168.226.240:8081/nexus/content/repositories/releases</url>
+			<id>Releases</id>
+			<url>http://localhost:8081/nexus/content/repositories/releases</url>
 		</repository>
 
 		<snapshotRepository>
-			<id>nexus-snapshots</id>
-			<url>http://192.168.226.240:8081/nexus/content/repositories/snapshots</url>
+			<id>Snapshots</id>
+			<url>http://localhost:8081/nexus/content/repositories/snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
 	
